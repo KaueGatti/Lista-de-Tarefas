@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Cabeçalho da pagina */
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(66, 209, 121);
+  width: 100%;
+  height: 130px;
+  text-align: center;
+  font-size: 60px;
+  box-shadow: 0px 10px 20px #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formlário do input da nova tarefa */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto auto;
+  margin-top: 50px;
+}
+
+/* Input para escrever uma nova tarefa */
+.inputTexto {
+  width: 80%;
+  height: 100px;
+  padding-left: 5%;
+  font-size: 25px;
+}
+
+/* Botão adicionar */
+.addTarefa {
+  width: 20%;
+  height: 100px;
+  background-color: rgb(66, 209, 121);
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  border: none;
+}
+
+/* Transição ao passar o mouse em cima do btt adicionar */
+.addTarefa:hover {
+  font-size: 25px;
+  box-shadow: inset 16px 16px 19px -7px rgba(0, 0, 0, 0.1),
+    inset -14px -13px 19px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Div de onde as tarefas vão ficar */
+.areaTarefas {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Div das tarefas */
+.tarefa {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 100px;
+  margin: auto auto;
+  margin-top: 25px;
+  border: 1px solid black;
+}
+
+/*Elementos da tarefa */
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  margin: auto auto;
+  height: 40px;
+}
+
+/* Texto da nova tarefa */
+.textoTarefa {
+  display: flex;
+  width: 65%;
+  text-align: start;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 25px;
+  border-left: none;
+}
+
+/* Botão deletar tarefa */
+.bttDelete {
+  width: 20%;
+  font-size: 20px;
+  transition: 0.3s;
+  background-color: #ea5050;
+  border: none;
+}
+
+/* Transição ao passar o mouse em cima do btt delete */
+.bttDelete:hover {
+  font-size: 25px;
+  box-shadow: inset 16px 16px 19px -7px rgba(0, 0, 0, 0.1),
+    inset -14px -13px 19px -5px rgba(0, 0, 0, 0.1);
+}
